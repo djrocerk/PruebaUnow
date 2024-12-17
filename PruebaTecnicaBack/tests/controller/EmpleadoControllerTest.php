@@ -1,5 +1,4 @@
 <?php
-// tests/Controller/EmpleadoControllerTest.php
 namespace App\Tests\Controller;
 
 use App\Entity\Empleado;
@@ -144,7 +143,7 @@ class EmpleadoControllerTest extends WebTestCase
         $this->assertStringContainsString('No autorizado', $responseContent);
     }
 
-    // Test for successfully deleting an employee
+    
     public function testDeleteEmpleadoSuccess()
     {
         $this->tokenStorage->method('getToken')->willReturn($this->createMock(TokenInterface::class));
